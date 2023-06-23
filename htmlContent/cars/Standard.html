@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>svuCars</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="icon" href="../../icon/cartransport_coch_7074.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600&family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/myFunctions.js"></script>
+  </head>
+  <body>
+    <section class="home" id="home">
+      <nav>
+        <h2>
+          <a href="../../index.html"><div class="s">s</div><div class="vu">vu</div><span>Cars</span></a>
+        </h2>
+        <ul>
+          <li><a href="../../index.html">الصفحة الرئيسية</a></li>
+          <li><a href="#home">من نحن</a></li>
+          <li><a href="../carT.html">السيارات</a></li>
+        </ul>
+        <a href="https://www.google.com/?hl=ar" target="_blank" class="btn"
+          ><bdi>رابـط النشـر</bdi></a
+        >
+      </nav>
+
+      <div class="alles">
+        <div class="gallary">
+          <div class="phg">
+            <img
+              src="../../images/carsImg/Dacia Logan 2022/1.jpg"
+              name="maincd"
+              alt=""
+            />
+          </div>
+          <div class="phk">
+            <img
+              onmouseenter="maincd.src=this.src"
+              src="../../images/carsImg/Dacia Logan 2022/1.jpg"
+              alt=""
+            />
+            <img
+              onmouseenter="maincd.src=this.src"
+              src="../../images/carsImg/Dacia Logan 2022/2.jpg"
+              alt=""
+            />
+            <img
+              onmouseenter="maincd.src=this.src"
+              src="../../images/carsImg/Dacia Logan 2022/3.jpg"
+              alt=""
+            />
+            <img
+              onmouseenter="maincd.src=this.src"
+              src="../../images/carsImg/Dacia Logan 2022/4.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="txt1">
+          <h3 class="carn">Hyundai Creta</h3>
+          <p>
+            هونداي كريتا هيونداي كريتا (Hyundai Creta) هي سيارة دفع رباعي
+            متعددة؛ الاستخدامات صغيرة الحجم، وتعتبر واحدة من أشهر السيارات
+            المنتجة من قبل شركة هيونداي الكورية الجنوبية. تتميز السيارة بتصميم
+            جذاب ومواصفات فنية متطورة، بالإضافة إلى أداء قوي وقدرات دفع رباعي
+            ممتازة. تأتي هيونداي كريتا بمحرك بنزين بسعة 1.6 ليتر ينتج قوة تصل
+            إلى 2100 حصانًا، ويتميز بأداء فعال واقتصادي في استهلاك الوقود. كما
+            تتوفر السيارة بعدة نسخ من حيث التجهيزات والمواصفات، حيث تتوفر نسخة
+            بسعر أقل تحت اسم "Base" ونسخة أعلى تحت اسم "Limited"، وتشمل
+            المواصفات على شاشة تعمل باللمس للمعلومات الترفيهية والتحكم في الهاتف
+            ونظام صوتي مميز ومثبت السرعة ومكيف الهواء ومقاعد جلدية فاخرة ونظام
+            ملاحة وكاميرات خلفية وجانبية للمساعدة في الرؤية الخلفية.
+          </p>
+        </div>
+      </div>
+
+      <div class="carp">
+        <table border="1" cellpadding="10" align="center" width="100%">
+          <tr align="center">
+            <th>الضريبة</th>
+            <th>رسم إعادة إعمار</th>
+            <th>الإيجار اليومي</th>
+          </tr>
+          <tr align="center">
+            <td>7,950</td>
+            <td>1,590</td>
+            <td>195,000</td>
+          </tr>
+        </table>
+
+        <br /><br />
+        <div id="formContainer" style="display: none">
+          <form id="myForm">
+            <!-- اضف الحقول والأزرار اللازمة هنا -->
+            <button type="submit">إرسال</button>
+          </form>
+        </div>
+        <br />
+
+        <div class="weiter">
+          <button class="btn"><a href="index.html">الـغــاء العملية</a></button>
+          <p style="text-align: center"><input type="checkbox" id="myCheckbox" /> متابعة</p>
+        </div>
+      </div>
+      <div id="formContainer" style="display: none">
+        <form id="myForm">
+          <label for="fullName">الاسم الكامل:</label>
+          <input
+            type="text"
+            id="fullName"
+            name="fullName"
+            pattern="[أ-ي\s]+"
+            required
+          />
+
+         
+            <label for="nationalID">الرقم الوطني:</label>
+            <input type="text" id="nationalID" required pattern="[0-9]{2}(-?[0-9]{2}){8}" />
+          
+          
+
+          <label for="birthDate">تاريخ الولادة:</label>
+          <input type="date" id="birthDate" name="birthDate" required />
+
+          <label for="mobileNumber">رقم الموبايل:</label>
+          <input
+            type="tel"
+            id="mobileNumber"
+            name="mobileNumber"
+            pattern="09\d{8}"
+            required
+          />
+
+          <label for="email">البريد الإلكتروني:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="rentDuration">عدد الأيام/الأسابيع/الشهور:</label>
+          <input type="number" id="rentDuration" name="rentDuration" required />
+
+          <div id="captchaContainer"></div>
+
+          <button type="submit">تقديم الطلب</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

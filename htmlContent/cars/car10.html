@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<!-- --- هون صفحة السيارة رقم 1 __________  -->
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>svuCars</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="icon" href="../../images/icon/1.ico" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600&family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <script src="js/myFunctions.js"></script>
+</head>
+
+<body>
+    <section class="home" id="home">
+        <nav>
+            <h2>
+                <a href="../../index.html">
+                    <div class="s">s</div>
+                    <div class="vu">vu</div><span>Cars</span>
+                </a>
+            </h2>
+            <ul>
+                <li><a href="../../index.html">الصفحة الرئيسية</a></li>
+                <li><a href="../about.html">من نحن</a></li>
+                <li><a href="../carT.html">السيارات</a></li>
+            </ul>
+            <a href="https://i-dirbas.github.io/final3/" target="_blank" class="btn"><bdi>رابـط النشـر</bdi></a>
+        </nav>
+
+        <div class="alles">
+            <div class="gallary">
+                <div class="phg">
+
+                    <!-- --- هون رابط الصورة رقم 1 __________  -->
+                    <img src="../../images/carsImg/RenaultClio2023/1.jpg" name="maincd" alt="" />
+                </div>
+                <div class="phk">
+                    <!-- --- هون رابط الصورة رقم 1 __________  -->
+
+                    <img onmouseenter="maincd.src=this.src" src="../../images/carsImg/RenaultClio2023/1.jpg" alt="" />
+                    <!-- --- هون رابط الصورة رقم 2 __________  -->
+
+                    <img onmouseenter="maincd.src=this.src" src="../../images/carsImg/RenaultClio2023/2.jpg" alt="" />
+                    <!-- --- هون رابط الصورة رقم 3 __________  -->
+
+                    <img onmouseenter="maincd.src=this.src" src="../../images/carsImg/RenaultClio2023/3.jpg" alt="" />
+                    <!-- --- هون رابط الصورة رقم 4 __________  -->
+
+                    <img onmouseenter="maincd.src=this.src" src="../../images/carsImg/RenaultClio2023/4.jpg" alt="" />
+                </div>
+            </div>
+
+            <div class="txt1">
+
+                <!-- --- هون اسم السيارة باللغة الانكليزية __________  -->
+
+                <h3 class="carn">Renault Clio</h3>
+                <!-- --- هون تفاصيل السيارة __________  -->
+
+                <p>
+                    سيارة رينو كليو 4 هي سيارة صغيرة الحجم تنتمي إلى فئة السيارات الاقتصادية، وتتميز بتصميم ديناميكي
+                    وعصري وموفر للوقود. تتوفر السيارة بعدة خيارات من حيث المحركات والتجهيزات، وتتميز بمواصفات فنية
+                    متطورة.
+
+                    تأتي رينو كليو 4 بمحرك بنزين بسعة 1.0 ليتر أو 1.3 ليتر، ويتميز بأداء فعال واقتصادي في استهلاك
+                    الوقود. وتتوفر السيارة بعدة نسخ من حيث التجهيزات والمواصفات، حيث تتوفر نسخة بسعر أقل تحت اسم
+                    "Authentique" ونسخة أعلى تحت اسم "Intens"، وتشمل المواصفات على شاشة تعمل باللمس للمعلومات الترفيهية
+                    والتحكم في الهاتف ونظام صوتي مميز ومثبت السرعة ومكيف الهواء ومقاعد قابلة للطي.
+                </p>
+            </div>
+        </div>
+
+        <div class="carp">
+            <table border="1" cellpadding="10" align="center" width="100%">
+                <tr align="center">
+                    <th>الضريبة</th>
+                    <th>رسم إعادة إعمار</th>
+                    <th id="dailyRent" data-value="188000">الإيجار اليومي</th>
+                </tr>
+                <tr align="center">
+                    <td id="tax"></td>
+                    <td id="reconstructionFee"></td>
+                    <td id="dailyRent"></td>
+                </tr>
+            </table>
+        </div>
+
+        <br /><br />
+
+        <br />
+
+        <div class="weiter">
+            <button class="btn" style="font-weight: 800;"><a href="index.html">إلغاء العملية</a></button>
+            <p><input type="checkbox" id="myCheckbox" /> متابعة</p>
+          </div>
+          <div class="space"></div>
+        
+          <div class="allform">
+            <form class="hide" id="myform"  >
+              <p class="hform"> يرجى إدخال معلوماتك </p>
+              <br> <br> <br>
+              <table>
+      
+      
+      
+                <tr>
+                  <td>
+                    <input type="text" name="full name" selected required placeholder="الاسم الكامل"
+                      oninput="validateFullName(this)" title="يجب إدخال أحرف فقط بدون أرقام.">
+                  </td>
+                  <td>الاسم الكامل</td>
+                </tr>
+      
+                <!-- ------------------------------------------------------->
+      
+                <tr>
+                  <td>
+                    <input type="text" name="Id number"  required placeholder="الرقم الوطني"
+                      oninput="validateIdNumber(this)" title="يرجى التأكد من الرقم الوطني">
+                  </td>
+                  <td>الرقم الوطني</td>
+                </tr>
+      
+      
+      
+      
+      
+                <!-- ------------------------------------------------------->
+                <!-- ------------------------------------------------------->
+      
+                <!-- ------------------------------------------------------->
+                <tr>
+                  <td><input type="date" name="DOB"  required placeholder="تاريخ الميلاد" oninput="validateAge(this)"
+                      title="يجب أن يكون عمرك 18 عامًا أو أكثر."></td>
+                  <td>تاريخ الميلاد</td>
+                </tr>
+      
+      
+                <!-- ------------------------------------------------------->
+                <!-- ------------------------------------------------------->
+      
+                <!-- ------------------------------------------------------->
+                <tr>
+                  <td><input type="text" name="phone number"  required placeholder="رقم الموبايل"
+                      oninput="validatePhoneNumber(this)" title="يرجى التأكد من رقم الهاتف"></td>
+                  <td>رقم الموبايل</td>
+                </tr>
+                <!-- ------------------------------------------------------->
+      
+                <!-- ------------------------------------------------------->
+                <td><input type="email" name="Email" required  placeholder="الإيميل" oninput="validateEmail(this)"
+                    title="يرجى إدخال بريد إلكتروني صحيح."></td>
+                <td>الإيميل</td>
+                </tr>
+      
+      
+                <!-- ---------------------------------------------يه---------->
+      
+                <!-- ------------------------------------------------------->
+                <tr>
+                  <td>
+                    <input type="number" name="rentDuration" id="rentDuration" required placeholder="المدة المطلوبة">
+                  </td>
+                  <td>المدة المطلوبة</td>
+                </tr>
+      
+                <tr>
+                  <td>
+                    <select name="durationType" id="durationType">
+                      <option value="days">أيام</option>
+                      <option value="weeks">أسابيع</option>
+                      <option value="months">شهور</option>
+                    </select>
+                  </td>
+                  <td>نوع المدة</td>
+                </tr>
+      
+             <!-- ------------------------------------------------------->
+      
+                <!-- --------------------Captcha -----------------------------------> 
+      
+                <tr>
+                  <td>
+                    <div class="contain">
+                      <input type="text" id="capt" readonly="readonly" />
+                      <!-- --------------------Foto ----------------------------------->
+                      <div id="refresh">
+                        <img src="../../images/icon/r.ico" onclick="cap()" />
+                      </div>
+                    </div>
+                  </td>
+                  <td>رمز التحقق</td>
+                </tr>
+                
+                <tr>
+                  <td><input type="text" id="txtinput" /></td>
+                  <td>اكتب رمز التحقق</td>
+                </tr>
+                
+                <tr>
+       <!-- ------------------------------------------------------->
+      
+                <!-- --------------------submit -----------------------------------> 
+      
+      
+                <tr>
+      
+                  <td><input class="btn" id="endbtn" type="submit" name="submit" value="تقديم الطلب"></td>
+                </tr>
+      
+              </table>
+          </div>
+      
+          </div>
+        </section>
+        <script src="../../js/myFunctions.js"></script>
+      
+      </body>
+      
+      </html>
